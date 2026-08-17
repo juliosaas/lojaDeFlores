@@ -11,33 +11,26 @@
 <body>
     <header>
         <nav>
-            <form action="../../index.html">
-            <button> &#60; Home </button>
-            <br>
-            <br>
-            <br>
+            <a href="../../index.html"><button type="button">&#60; Home</button></a>
         </nav>
         <h1>Login</h1>
     </header>
-    <form action="../../index.html">
-        Login: <br>
-        <input required placeholder="Insira seu email" type="email">
-        <br>
-        <br>
-        Senha: <br>
-        <input aria-required="" placeholder="Insira sua senha" type="password">
-        <br>
-        <br>
-        <a target="_blank" href="../esqueciMinhaSenha/esqueciMinhaSenha.html">Esqueceu sua senha? Clique aqui.</a>
-        <br>
-        <br>
-        <button><a target="_self" href="../../index.html"></a>Entrar</button>
-        <br>
-        <br>
-        <br>
-        Ainda não tem cadastro? <a href="../cadastro/cadastro.html">Cadastre-se</a>
+
+    <main>
+        <form action="../../index.html" id="loginForm">
+            <label for="email">Login:</label>
+            <input id="email" required placeholder="Insira seu email" type="email">
+
+            <label for="senha">Senha:</label>
+            <input id="senha" aria-required="true" placeholder="Insira sua senha" type="password">
+
+            <a class="forgotPassword" target="_blank" href="../esqueciMinhaSenha/esqueciMinhaSenha.html">Esqueceu sua senha? Clique aqui.</a>
+
+            <button type="submit">Entrar</button>
+
+            <p class="registerText">Ainda não tem cadastro? <a href="../cadastro/cadastro.html">Cadastre-se</a></p>
         </form>
-    </form>
+    </main>
 
 </body>
 

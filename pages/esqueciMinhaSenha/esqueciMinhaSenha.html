@@ -3,27 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Recuperar senha</title>
     <link rel="stylesheet" href="esqueciMinhaSenha.css">
 </head>
 <body>
     <header>
         <nav>
-            <form action="../login/login.html">
-                <button> &#60; Login</button>
-            </form>
+            <a href="../login/login.html"><button type="button">&#60; Login</button></a>
         </nav>
-        <br>
-        <br>
-        <br>
         <h1>Recuperar senha</h1>
     </header>
-    <form action="../login/login.html">
 
-        Insira seu email: <br>
-        <input required type="email"> <br><br>
+    <main>
+        <form action="../login/login.html" id="recuperarForm">
+            <div class="field">
+                <label for="email">Insira seu email:</label>
+                <input id="email" required type="email">
+            </div>
 
-        <button>Enviar</button>
-    </form>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
 </body>
 </html>

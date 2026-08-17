@@ -9,64 +9,77 @@
 <body>
     <header>
         <nav>
-            <form action="../login/login.html">
-                <button><a href="../login/login.html"></a>Login</button><br><br><br><br><br>
-            </form>
+            <a href="../login/login.html"><button type="button">Login</button></a>
         </nav>
         <h1>Cadastre-se</h1>
     </header>
 
     <main>
-        <form action="../login/login.html" onsubmit="alert('Cadastro criado')">
-            Nome completo: <br>
-            <input required type="text">
-            <br>
-            <br>
-            Email: <br>
-            <input required type="email">
-            <br>
-            <br>
-            Senha: <br>
-            <input required type="password">
-            <br>
-            <br>
-            Confirme sua senha: <br>
-            <input required type="password">
-            <br>
-            <br>
-            RG:<br>
-            <input required type="number">
-            <br>
-            <br>
-            CPF: <br>
-            <input required type="number">
-            <br>
-            <br>
-            Endereço: <br>
-            <input required type="text">
-            <br>
-            <br>
-            CEP: <br>
-            <input required type="number">
-            <br>
-            <br>
-            Cidade: <br>
-            <input required type="text">
-            <br>
-            <br>
-            Estado: <br>
-            <input required type="text"> <br><br>
-            Pais: <br>
-            <input required type="text"> <br><br>
-            Data de nascimento: <br>
-            <input required type="date"> <br><br>
-            <br>
-            <br>
-            <button><a href="../login/login.html"></a>Cadastrar</button>
-        </form>
+        <form action="../login/login.html" id="cadastroForm" onsubmit="alert('Cadastro criado')">
+            <div class="field">
+                <label for="nome">Nome completo:</label>
+                <input id="nome" required type="text">
+            </div>
 
+            <div class="field">
+                <label for="email">Email:</label>
+                <input id="email" required type="email">
+            </div>
+
+            <div class="field">
+                <label for="senha">Senha:</label>
+                <input id="senha" required type="password">
+            </div>
+
+            <div class="field">
+                <label for="confirmaSenha">Confirme sua senha:</label>
+                <input id="confirmaSenha" required type="password">
+            </div>
+
+            <div class="field">
+                <label for="rg">RG:</label>
+                <input id="rg" required type="text" inputmode="numeric">
+            </div>
+
+            <div class="field">
+                <label for="cpf">CPF:</label>
+                <input id="cpf" required type="text" inputmode="numeric">
+            </div>
+
+            <div class="field">
+                <label for="endereco">Endereço:</label>
+                <input id="endereco" required type="text">
+            </div>
+
+            <div class="field">
+                <label for="cep">CEP:</label>
+                <input id="cep" required type="text" inputmode="numeric">
+            </div>
+
+            <div class="field">
+                <label for="cidade">Cidade:</label>
+                <input id="cidade" required type="text">
+            </div>
+
+            <div class="field">
+                <label for="estado">Estado:</label>
+                <input id="estado" required type="text">
+            </div>
+
+            <div class="field">
+                <label for="pais">País:</label>
+                <input id="pais" required type="text">
+            </div>
+
+            <div class="field">
+                <label for="nascimento">Data de nascimento:</label>
+                <input id="nascimento" required type="date">
+            </div>
+
+            <button type="submit">Cadastrar</button>
+        </form>
     </main>
-    
+
     <footer>
 
     </footer>
