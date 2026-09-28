@@ -44,33 +44,13 @@
         </div>
     </header>
     <main>
-        <section id="produtos">
-            <div class="items">
-                <img src="assets/images/buqueUm.png" alt="1">
-                <h3>Buquê Um</h3>
-                <p class="nota">⭐ 4.8 (120 avaliações)</p>
-                <p class="preco">R$ 99,90</p>
-                <button>Comprar</button>
-            </div>
- 
-            <div class="items">
-                <img src="assets/images/buqueDois.png" alt="2">
-                <h3>Buquê Dois</h3>
-                <p class="nota">⭐ 4.6 (85 avaliações)</p>
-                <p class="preco">R$ 129,90</p>
-                <button>Comprar</button>
-            </div>
- 
-            <div class="items">
-                <img src="assets/images/buqueTres.png" alt="3">
-                <h3>Buquê Três</h3>
-                <p class="nota">⭐ 4.9 (200 avaliações)</p>
-                <p class="preco">R$ 149,90</p>
-                <button>Comprar</button>
-            </div>
-        </section>
+        <!-- ALTERAÇÃO: os 3 <div class="items"> que antes estavam fixos aqui dentro
+             foram removidos. Agora essa section fica vazia e é o JS (script.js)
+             que vai preencher ela em tempo de execução, um card por produto do array -->
+        <section id="produtos"></section>
     </main>
     <footer>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
