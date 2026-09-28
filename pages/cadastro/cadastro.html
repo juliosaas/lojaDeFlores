@@ -1,88 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-    <link rel="stylesheet" href="cadastro.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
 </head>
+
 <body>
     <header>
         <nav>
-            <a href="../login/login.html"><button type="button">Login</button></a>
+            <a href="../../index.html"><button type="button">&#60; Home</button></a>
         </nav>
-        <h1>Cadastre-se</h1>
+        <h1>Login</h1>
     </header>
 
     <main>
-        <form action="../login/login.html" id="cadastroForm" onsubmit="alert('Cadastro criado')">
-            <div class="field">
-                <label for="nome">Nome completo:</label>
-                <input id="nome" required type="text">
-            </div>
+        <label for="inputLogin">Login:</label>
+        <input id="inputLogin" required placeholder="Insira seu email" type="text">
 
-            <div class="field">
-                <label for="email">Email:</label>
-                <input id="email" required type="email">
-            </div>
+        <label for="inputSenha">Senha:</label>
+        <input id="inputSenha" aria-required="true" placeholder="Insira sua senha" type="password">
 
-            <div class="field">
-                <label for="senha">Senha:</label>
-                <input id="senha" required type="password">
-            </div>
+        <a class="forgotPassword" target="_blank" href="../esqueciMinhaSenha/esqueciMinhaSenha.html">Esqueceu sua senha? Clique aqui.</a>
 
-            <div class="field">
-                <label for="confirmaSenha">Confirme sua senha:</label>
-                <input id="confirmaSenha" required type="password">
-            </div>
+        <button type="button" onclick="validarLogin()">Entrar</button>
 
-            <div class="field">
-                <label for="rg">RG:</label>
-                <input id="rg" required type="text" inputmode="numeric">
-            </div>
-
-            <div class="field">
-                <label for="cpf">CPF:</label>
-                <input id="cpf" required type="text" inputmode="numeric">
-            </div>
-
-            <div class="field">
-                <label for="endereco">Endereço:</label>
-                <input id="endereco" required type="text">
-            </div>
-
-            <div class="field">
-                <label for="cep">CEP:</label>
-                <input id="cep" required type="text" inputmode="numeric">
-            </div>
-
-            <div class="field">
-                <label for="cidade">Cidade:</label>
-                <input id="cidade" required type="text">
-            </div>
-
-            <div class="field">
-                <label for="estado">Estado:</label>
-                <input id="estado" required type="text">
-            </div>
-
-            <div class="field">
-                <label for="pais">País:</label>
-                <input id="pais" required type="text">
-            </div>
-
-            <div class="field">
-                <label for="nascimento">Data de nascimento:</label>
-                <input id="nascimento" required type="date">
-            </div>
-
-            <button type="submit">Cadastrar</button>
-        </form>
+        <p class="registerText">Ainda não tem cadastro? <a href="../cadastro/cadastro.html">Cadastre-se</a></p>
     </main>
 
-    <footer>
-
-    </footer>
-    <script src="cadastro.js"></script>
+    <script src="login.js"></script>
 </body>
+
 </html>
