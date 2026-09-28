@@ -4,53 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Bootstrap vem ANTES dos seus CSS, assim o seu CSS ganha em caso de conflito -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="global.css">
 </head>
-<body>
-    <header>
-        <nav>
+<body class="d-flex flex-column flex-nowrap w-100 h-100">
+    <header class="d-flex flex-column w-100 h-100">
+        <nav class="d-flex justify-content-center align-items-center flex-nowrap text-white text-nowrap w-100">
             Frete gratis na primeira compra à partir de R$75,00
         </nav>
- 
-        <section id="hSection">
-            <div id="search">
-                <a class="searchTxt" href="">Lorem ipsum</a>
-                <a class="searchTxt" href="">Lorem ipsum</a>
-                <a class="searchTxt" href="">Lorem ipsum</a>
-                <a class="searchTxt" href="">Lorem ipsum</a>
-                <a class="searchTxt" href="">Lorem ipsum</a>
+
+        <section id="hSection" class="d-flex flex-nowrap justify-content-around align-items-center w-100">
+            <div id="search" class="d-flex align-self-end">
+                <a class="searchTxt text-reset text-decoration-none text-nowrap" href="">Lorem ipsum</a>
+                <a class="searchTxt text-reset text-decoration-none text-nowrap" href="">Lorem ipsum</a>
+                <a class="searchTxt text-reset text-decoration-none text-nowrap" href="">Lorem ipsum</a>
+                <a class="searchTxt text-reset text-decoration-none text-nowrap" href="">Lorem ipsum</a>
+                <a class="searchTxt text-reset text-decoration-none text-nowrap" href="">Lorem ipsum</a>
             </div>
- 
-            <a id="button" href="#produtos">Catálogo</a>
- 
-            <div id="icon">
-                <div>
+
+            <a id="button" class="d-flex justify-content-center align-items-center text-white text-decoration-none text-nowrap" href="#produtos">Catálogo</a>
+
+            <div id="icon" class="d-flex flex-row flex-nowrap justify-content-end align-items-center">
+                <div class="d-flex flex-column align-items-center">
                     <img class="ClassIcon" src="assets/images/cadastreSe.png" alt="cadastro">
-                    <a href="pages/cadastro/cadastro.html">Cadastre-se</a>
+                    <a class="text-reset text-decoration-none text-nowrap" href="pages/cadastro/cadastro.html">Cadastre-se</a>
                 </div>
-                <div>
+                <div class="d-flex flex-column align-items-center">
                     <img class="ClassIcon" src="assets/images/login.png" alt="login">
-                    <a href="pages/login/login.html">Login</a>
+                    <a class="text-reset text-decoration-none text-nowrap" href="pages/login/login.html">Login</a>
                 </div>
-                <div>
+                <div class="d-flex flex-column align-items-center">
                     <img class="ClassIcon" src="assets/images/shopping_cart.png" alt="cart">
-                    <a href="">Carrinho</a>
+                    <a class="text-reset text-decoration-none text-nowrap" href="">Carrinho</a>
                 </div>
             </div>
         </section>
+
         <div id="hBanner">
-            <img src="assets/images/Gemini_Generated_Image_mtcknhmtcknhmtck.png" alt="">
+            <img class="w-100 object-fit-cover" src="assets/images/Gemini_Generated_Image_mtcknhmtcknhmtck.png" alt="">
         </div>
     </header>
-    <main>
-        <!-- ALTERAÇÃO: os 3 <div class="items"> que antes estavam fixos aqui dentro
-             foram removidos. Agora essa section fica vazia e é o JS (script.js)
-             que vai preencher ela em tempo de execução, um card por produto do array -->
-        <section id="produtos"></section>
+
+    <main class="d-flex flex-column flex-nowrap align-items-center mt-5">
+        <section id="produtos" class="d-flex"></section>
     </main>
+
     <footer>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
